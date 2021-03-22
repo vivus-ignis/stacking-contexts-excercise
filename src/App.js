@@ -10,11 +10,11 @@ import HelpButton from "./HelpButton";
 export default function App() {
   return (
     <Wrapper>
-      <HelpButton />
       <HeaderWrapper>
         <Header />
       </HeaderWrapper>
       <PageContent />
+      <HelpButton />
       <GlobalStyles />
     </Wrapper>
   );
@@ -22,9 +22,11 @@ export default function App() {
 
 const Wrapper = styled.div`
   min-height: 150vh;
+  position: relative;
 `;
 
 const HeaderWrapper = styled.div`
   position: sticky;
   top: 0;
+  z-index: 20;
 `;

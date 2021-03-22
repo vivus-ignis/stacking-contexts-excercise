@@ -18,6 +18,7 @@ function PageContent() {
 
 const Row = styled.div`
   position: relative;
+  z-index: 10;
 `;
 
 const MainContent = styled.main`
